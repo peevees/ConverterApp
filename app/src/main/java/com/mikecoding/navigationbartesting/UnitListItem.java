@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -41,15 +42,16 @@ public class UnitListItem extends LinearLayout{
             myTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams
                     (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            myTextView.setLayoutParams(textParams);
-            addView(myTextView);
             if (j == 0) {
                 myTextView.setText(itemValue.getUnit());
                 left = myTextView;
             } else {
-                myTextView.setText(itemValue.getConvertValue().toString());//TODO change later
+                myTextView.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
+                myTextView.setText(itemValue.getConvertValue().toString());
                 right = myTextView;
             }
+            myTextView.setLayoutParams(textParams);
+            addView(myTextView);
             LinearLayout.LayoutParams LinearParams = new LinearLayout.LayoutParams
                     (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             setLayoutParams(LinearParams);

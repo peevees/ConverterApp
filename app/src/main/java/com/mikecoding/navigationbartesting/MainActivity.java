@@ -99,6 +99,15 @@ public class MainActivity extends AppCompatActivity
                     units.add(itemValue);
                 }
                 return units;
+            case 5:
+                unit_namestruncated= res.getStringArray(R.array.weight_array);
+                for(int i = 0; i < unit_namestruncated.length; i++){
+                    splitString = unit_namestruncated[i];
+                    String[] items = splitString.split(",");
+                    ItemValue itemValue = new ItemValue(items[0], Double.parseDouble(items[1]));
+                    units.add(itemValue);
+                }
+                return units;
             default:
                 unit_namestruncated= res.getStringArray(R.array.dummy_array);
                 for(int i = 0; i < unit_namestruncated.length; i++){
@@ -178,6 +187,8 @@ public class MainActivity extends AppCompatActivity
             addContent(GetResource(3));
         } else if (id == R.id.nav_time) {
             addContent(GetResource(4));
+        } else if (id == R.id.nav_weight) {
+            addContent(GetResource(5));
         } else if (id == R.id.nav_settings) {
             Toast.makeText(MainActivity.this, "Under Construction", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_about){

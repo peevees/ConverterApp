@@ -20,6 +20,7 @@
 
     <!-- T -->
     <string name="time">Time</string>
+    <string name="weight">Weight</string>
     <string name="dialog_input_unit">Input number</string>
     <string name="enter">Enter</string>
     <string name="cancel">Cancel</string>

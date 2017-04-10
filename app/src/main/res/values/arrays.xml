@@ -17,47 +17,53 @@
     </string-array>
     
     <string-array name="cooking_array">
-        <item>cup(metric)</item>
-        <item>cup(US)</item>
-        <item>dessertspoon</item>
-        <item>gallon(US)</item>
-        <item>gallon(UK)</item>
-        <item>kiloliter</item>
-        <item>liter</item>
-        <item>milliliter</item>
-        <item>ounce(US)</item>
-        <item>ounce(UK)</item>
-        <item>peck(US)</item>
-        <item>peck(UK)</item>
-        <item>pinch</item>
-        <item>pint(UK)</item>
-        <item>pint(US)</item>
-        <item>quart(UK)</item>
-        <item>quart(US)</item>
-        <item>tablespoon(US)</item>
-        <item>tablespoon(UK)</item>
-        <item>tablespoon(metric)</item>
-        <item>teaspoon(US)</item>
-        <item>teaspoon(UK)</item>
-        <item>teaspoon(metric)</item>
-        <item>teacup(UK)</item>
+        <item>cup&lt;metric&gt;,1</item>
+        <item>cup&lt;US&gt;,1.0566882</item>
+        <item>dessertspoon,25</item>
+        <item>gallon&lt;US&gt;,0.006604301</item>
+        <item>gallon&lt;UK&gt;,0.05499231</item>
+        <item>kiloliter,0.00025</item>
+        <item>liter,0.25</item>
+        <item>milliliter,250</item>
+        <item>ounce&lt;US&gt;,8.45350565</item>
+        <item>ounce&lt;UK&gt;,8.79876992</item>
+        <item>peck&lt;US&gt;,0.0283776</item>
+        <item>peck&lt;UK&gt;,0.02749615</item>
+        <item>pinch,811.53654142</item>
+        <item>pint&lt;UK&gt;,0.5283441</item>
+        <item>pint&lt;US&gt;,0.4399385</item>
+        <item>quart&lt;UK&gt;,0.26417205</item>
+        <item>quart&lt;UK&gt;,0.21996925</item>
+        <item>tablespoon&lt;US&gt;,16.90701125</item>
+        <item>tablespoon&lt;UK&gt;,17.59753988</item>
+        <item>tablespoon&lt;metric&gt;,16.6665</item>
+        <item>teaspoon&lt;US&gt;,50.721035</item>
+        <item>teaspoon&lt;UK&gt;,51.44121197</item>
+        <item>teaspoon&lt;metric&gt;,50</item>
+        <item>teacup&lt;UK&gt;,1.3198155</item>
     </string-array>
 
     <string-array name="datastorage_array">
-        <item>bit - b</item>
-        <item>byte - B</item>
-        <item>kilobit - kb</item>
-        <item>kiloByte - kB</item>
-        <item>megabit - Mb</item>
-        <item>megabyte - MB</item>
-        <item>gigabit - Gb</item>
-        <item>gigabyte - GB</item>
-        <item>terabit - tb</item>
-        <item>terabyte - TB</item>
-        <item>petabit - pb</item>
-        <item>petabyte - PB</item>
-        <item>exabit - Eb</item>
-        <item>exabyte - EB</item>
+        <item>bit - b,1</item>
+        <item>nibble,0.25</item>
+        <item>byte - B,0.125</item>
+        <item>character,0.125</item>
+        <item>word,0.0625</item>
+        <item>MAPM-word,0.03125</item>
+        <item>quadruple-word,0.015625</item>
+        <item>block,0.00024414</item>
+        <item>kilobit - kb,0.00097656</item>
+        <item>kiloByte - kB,0.00012207</item>
+        <item>megabit - Mb,0.00000095367431</item>
+        <item>megabyte - MB,1.1920929e-07</item>
+        <item>gigabit - Gb,9.3132257e-10</item>
+        <item>gigabyte - GB,1.1641532e-10</item>
+        <item>terabit - tb,9.0949470e-13</item>
+        <item>terabyte - TB,1.1368683e-13</item>
+        <item>petabit - pb,8.8817842e-16</item>
+        <item>petabyte - PB,1.1102230e-16</item>
+        <item>exabit - Eb,8.6736173e-19</item>
+        <item>exabyte - EB,1.0842021e-19</item>
     </string-array>
 
 
@@ -72,55 +78,71 @@
         <item>micrometer - μm,1000000</item>
         <item>foot - ft,3.281</item>
         <item>inch - in,39.37</item>
-        <item>mile(International),0.00062137</item>
-        <item>nautical mile(UK),0.00053961</item>
-        <item>nautical mile(IT),0.00053966</item>
+        <item>mile&lt;International&gt;,0.00062137</item>
+        <item>nautical mile&lt;UK&gt;,0.00053961</item>
+        <item>nautical mile&lt;IT&gt;,0.00053966</item>
         <item>yard - yd,1.0936166</item>
         <item>furlong - fur,0.00497097</item>
         <item>fathom - fath,0.54680665</item>
     </string-array>
-<!--
-    <double-array name="length_convertValue">
-        <item>1</item>
-        <item>0.001</item>
-        <item>0.01</item>
-        <item>0.1</item>
-        <item>10</item>
-        <item>100</item>
-        <item>1000</item>
-        <item>1000000</item>
-        <item>3.281</item>
-        <item>39.37</item>
-        <item>0.000621371192</item>
-        <item>0.0005399568</item>
-        <item>1</item>
-        <item>1</item>
-        <item>1</item>
-        <item>1</item>
-    </double-array>
--->
+
     <string-array name="time_array">
-        <item>attosecond - as</item>
-        <item>femtosecond - fs</item>
-        <item>picosecond - ps</item>
-        <item>nanosecond - ns</item>
-        <item>microsecond - μs</item>
-        <item>millisecond - ms</item>
-        <item>second - s</item>
-        <item>minute - min</item>
-        <item>hour - h</item>
-        <item>day - d</item>
-        <item>week</item>
-        <item>fortnight</item>
-        <item>month</item>
-        <item>year</item>
-        <item>decade</item>
-        <item>century</item>
-        <item>millenium</item>
+        <item>second - s,1</item>
+        <item>attosecond - as,1e18</item>
+        <item>femtosecond - fs,1e15</item>
+        <item>picosecond - ps,1e12</item>
+        <item>nanosecond - ns,1e09</item>
+        <item>microsecond - μs,1000000</item>
+        <item>millisecond - ms,1000</item>
+        <item>minute - min,0.01666667</item>
+        <item>hour - h,0.00027778</item>
+        <item>day - d,1.1574074e-05</item>
+        <item>week,1.6534391e-06</item>
+        <item>fortnight,8.2671957e-07</item>
+        <item>month,3.8051750e-07</item>
+        <item>year - y,3.1709772e-08</item>
+        <item>decade,3.1709792e-09</item>
+        <item>century,3.1709792e-10</item>
+        <item>millenium,3.1709792e-11</item>
+    </string-array>
+    
+    <string-array name="weight_array">
+        <item>kilogram - kg,1</item>
+        <item>gram - g,1000</item>
+        <item>hectogram - hg,10</item>
+        <item>dekagram - dag,100</item>
+        <item>decigram - dg,10000</item>
+        <item>centigram - cg,100000</item>
+        <item>milligram - mg,1000000</item>
+        <item>microgram - µg,1000000000</item>
+        <item>cwt&lt;long&gt; - cwt,0.01968413</item>
+        <item>cwt&lt;short&gt; - cwt,0.02204623</item>
+        <item>carat - ct,5000</item>
+        <item>gamma,1000000000</item>
+        <item>ton&lt;metric&gt; - ton,0.001</item>
+        <item>ton&lt;long&gt; - ton&lt;US&gt;,0.00110231</item>
+        <item>ton&lt;short&gt; - ton&lt;UK&gt;,0.00098421</item>
+        <item>ton&lt;assay US&gt; - AT&lt;US&gt;,34.28571037</item>
+        <item>ton&lt;assay UK&gt; - AT&lt;UK&gt;,30.612449</item>
+        <item>pound - lb,2.20462262</item>
+        <item>ounce - oz,35.27396195</item>
+        <item>poundal - pdl,70.98884842</item>
+        <item>quarter&lt;US&gt; - qr&lt;US&gt;,0.0881849</item>
+        <item>quarter&lt;UK&gt; - qr&lt;UK&gt;,0.07873652</item>
+        <item>stone&lt;US&gt; - st&lt;US&gt;,0.17636981</item>
+        <item>stone&lt;UK&gt; - st&lt;UK&gt;,0.15747304</item>
+        <item>pennyweight - dwt,643.01493137</item>
+        <item>scruple - s.ap,771.61791764</item>
+        <item>grain - gr,15432.3583529</item>
+        <item>slug,0.06852177</item>
+        <item>troy ounce - ozt,32.15074657</item>
+        <item>troy pound - troy,2.67922888</item>
+        <item>unified atomic mass unit,602214000000000000000000000</item>
     </string-array>
 
     <string-array name="dummy_array">
-        <item>That wasn\'t supposed to happen,101</item>
+        <item>That wasn\'t supposed to happen,1</item>
+        <item>please choose another category,1</item>
     </string-array>
 
 </resources>

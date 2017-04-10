@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- units -->
-<!-- TODO move these strings to Strings.xml for easier translation access -->
+<!-- TODO move these strings to Strings.xml for easier translation access? -->
     <string-array name="acceleration_array">
         <item>meter/sec^2 - m/s^2,1</item>
         <item>meter/min^2 - m/min^2,3600</item>

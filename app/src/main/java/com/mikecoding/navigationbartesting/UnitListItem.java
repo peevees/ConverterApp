@@ -42,16 +42,17 @@ public class UnitListItem extends LinearLayout{
             myTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams
                     (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            myTextView.setLayoutParams(textParams);
+            addView(myTextView);
             if (j == 0) {
                 myTextView.setText(itemValue.getUnit());
+                textParams.weight = 1;
                 left = myTextView;
             } else {
-                myTextView.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
+                textParams.gravity = Gravity.RIGHT;
                 myTextView.setText(itemValue.getConvertValue().toString());
                 right = myTextView;
             }
-            myTextView.setLayoutParams(textParams);
-            addView(myTextView);
             LinearLayout.LayoutParams LinearParams = new LinearLayout.LayoutParams
                     (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             setLayoutParams(LinearParams);

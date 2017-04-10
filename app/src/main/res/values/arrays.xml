@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- units -->
+<!-- TODO move these strings to Strings.xml for easier translation access -->
+    <string-array name="acceleration_array">
+        <item>meter/sec^2 - m/s^2,1</item>
+        <item>meter/min^2 - m/min^2,3600</item>
+        <item>kilometer/hr^2 - km/h^2,12960</item>
+        <item>foot/sec^2 - ft/s^2,3.2808399</item>
+        <item>foot/min^2 - ft/min^2,11811.0236220</item>
+        <item>foot/hour^2 - ft/h^2,42519685.0393</item>
+        <item>inch/sec^2 - in/s^2,39.370077874</item>
+        <item>galileo - Gal,100</item>
+        <item>mile/sec^2 - mi/s^2,0.00062137</item>
+        <item>yard/sec^2 - yd/s^2,1.0936133</item>
+        <item>Acceleration of gravity - g,0.10197162</item>
+    </string-array>
+    
+    <string-array name="cooking_array">
+        <item>cup(metric)</item>
+        <item>cup(US)</item>
+        <item>dessertspoon</item>
+        <item>gallon(US)</item>
+        <item>gallon(UK)</item>
+        <item>kiloliter</item>
+        <item>liter</item>
+        <item>milliliter</item>
+        <item>ounce(US)</item>
+        <item>ounce(UK)</item>
+        <item>peck(US)</item>
+        <item>peck(UK)</item>
+        <item>pinch</item>
+        <item>pint(UK)</item>
+        <item>pint(US)</item>
+        <item>quart(UK)</item>
+        <item>quart(US)</item>
+        <item>tablespoon(US)</item>
+        <item>tablespoon(UK)</item>
+        <item>tablespoon(metric)</item>
+        <item>teaspoon(US)</item>
+        <item>teaspoon(UK)</item>
+        <item>teaspoon(metric)</item>
+        <item>teacup(UK)</item>
+    </string-array>
+
+    <string-array name="datastorage_array">
+        <item>bit - b</item>
+        <item>byte - B</item>
+        <item>kilobit - kb</item>
+        <item>kiloByte - kB</item>
+        <item>megabit - Mb</item>
+        <item>megabyte - MB</item>
+        <item>gigabit - Gb</item>
+        <item>gigabyte - GB</item>
+        <item>terabit - tb</item>
+        <item>terabyte - TB</item>
+        <item>petabit - pb</item>
+        <item>petabyte - PB</item>
+        <item>exabit - Eb</item>
+        <item>exabyte - EB</item>
+    </string-array>
+
+
+    <string-array name="length_array">
+        <item>meter - m,1</item>
+        <item>kilometer - km,0.001</item>
+        <item>hectometer - hm,0.01</item>
+        <item>dekameter - dam,0.1</item>
+        <item>decimeter - dm,10</item>
+        <item>centimeter - cm,100</item>
+        <item>millimeter - mm,1000</item>
+        <item>micrometer - μm,1000000</item>
+        <item>foot - ft,3.281</item>
+        <item>inch - in,39.37</item>
+        <item>mile(International),0.00062137</item>
+        <item>nautical mile(UK),0.00053961</item>
+        <item>nautical mile(IT),0.00053966</item>
+        <item>yard - yd,1.0936166</item>
+        <item>furlong - fur,0.00497097</item>
+        <item>fathom - fath,0.54680665</item>
+    </string-array>
+<!--
+    <double-array name="length_convertValue">
+        <item>1</item>
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>10</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>1000000</item>
+        <item>3.281</item>
+        <item>39.37</item>
+        <item>0.000621371192</item>
+        <item>0.0005399568</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </double-array>
+-->
+    <string-array name="time_array">
+        <item>attosecond - as</item>
+        <item>femtosecond - fs</item>
+        <item>picosecond - ps</item>
+        <item>nanosecond - ns</item>
+        <item>microsecond - μs</item>
+        <item>millisecond - ms</item>
+        <item>second - s</item>
+        <item>minute - min</item>
+        <item>hour - h</item>
+        <item>day - d</item>
+        <item>week</item>
+        <item>fortnight</item>
+        <item>month</item>
+        <item>year</item>
+        <item>decade</item>
+        <item>century</item>
+        <item>millenium</item>
+    </string-array>
+
+    <string-array name="dummy_array">
+        <item>That wasn\'t supposed to happen,101</item>
+    </string-array>
+
+</resources>

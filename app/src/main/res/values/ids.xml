@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="unit1"/>
+    <item type="id" name="unit2"/>
+    <item type="id" name="unit3"/>
+    <item type="id" name="unit4"/>
+    <item type="id" name="unit5"/>
+    <item type="id" name="unit6"/>
+    <item type="id" name="unit7"/>
+    <item type="id" name="unit8"/>
+    <item type="id" name="unit9"/>
+    <item type="id" name="input_Box"/>
+
+
+</resources>

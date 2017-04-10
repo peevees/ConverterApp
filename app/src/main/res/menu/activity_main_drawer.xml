@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/Categories"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_acce"
+            android:title="@string/acce"/>
+        <item
+            android:id="@+id/nav_cook"
+            android:title="@string/cook" />
+        <item
+            android:id="@+id/nav_data"
+            android:title="@string/data" />
+        <item
+            android:id="@+id/nav_dist"
+            android:title="@string/dist" />
+        <item
+            android:id="@+id/nav_time"
+            android:title="@string/time" />
+    </group>
+
+    <group
+        android:id="@+id/group_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="About" />
+    </group>
+
+
+</menu>

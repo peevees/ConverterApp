@@ -1,7 +1,9 @@
 package com.mikecoding.navigationbartesting;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
@@ -16,6 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,12 +30,13 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private ArrayList<UnitListItem> unitList = new ArrayList<UnitListItem>();
+    public ArrayList<UnitListItem> unitList = new ArrayList<UnitListItem>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Context context = this;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -125,14 +129,25 @@ public class MainActivity extends AppCompatActivity
 
         columnLinearLayout = (LinearLayout) findViewById(R.id.units_layout);
         columnLinearLayout.removeAllViews();
-
         for(ItemValue item : units) {
             UnitListItem unitListItem = new UnitListItem(this, item);
+            View view = new View(this);
+            view.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 2));
+            view.setBackgroundColor(Color.parseColor("#c0c0c0"));
             unitList.add(unitListItem);
+
             columnLinearLayout.addView(unitListItem);
+            columnLinearLayout.addView(view);
+        }
+    }
+    public void clearColour(){
+        //for each
+        for(UnitListItem item : unitList){
+            item.clearBackgroundColour();
         }
     }
     public void startConverting(Double mTo){
+
         //for each
         for(UnitListItem item : unitList){
             item.convert(mTo);

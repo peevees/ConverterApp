@@ -2,6 +2,7 @@ package com.mikecoding.navigationbartesting;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.util.Log;
@@ -40,6 +41,7 @@ public class UnitListItem extends LinearLayout{
         for (int j = 0; j < amountOfTextViews; j++) {
             TextView myTextView = new TextView(context);
             myTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+            myTextView.setTextColor(Color.parseColor("#000000"));
             LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams
                     (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             myTextView.setLayoutParams(textParams);
@@ -64,9 +66,12 @@ public class UnitListItem extends LinearLayout{
         int action = event.getActionMasked();
         if(action == MotionEvent.ACTION_UP) {
             showDialog(context);
+            ((MainActivity) context).clearColour();
+            setBackgroundColor(Color.parseColor("#999999"));
         }
         return super.onTouchEvent(event);
     }
+
     public double showDialog(final Context context){
 
         //Start building the dialog
@@ -91,13 +96,15 @@ public class UnitListItem extends LinearLayout{
                         right.setText(String.valueOf(inputUnit));
 
                         toM = inputUnit/itemValue.getConvertValue();
-                        ((MainActivity) context).startConverting(toM);
+                        ((MainActivity) context).startConverting(toM);//TODO make an almost equal clear colour
                         break;
                     }catch(Exception e){
                         Log.d("TAG", "EXCEPTION: " + e);
                         Toast.makeText(context, "Input needs to be a number", Toast.LENGTH_SHORT).show();
+                        input.setText(right.getText().toString());
                     }
                 }
+
             }
         });
         builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -110,9 +117,13 @@ public class UnitListItem extends LinearLayout{
         return inputUnit;
     }
     public void convert(Double mto){
-        Log.d("TAG", "IN CONVERT: " + mto.toString());
+        //Log.d("TAG", "IN CONVERT: " + mto.toString());
         Double Result = mto * itemValue.getConvertValue();
         right.setText(Result.toString());
+    }
+
+    public void clearBackgroundColour(){
+            setBackgroundColor(0);
     }
 
 }

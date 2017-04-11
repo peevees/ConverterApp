@@ -96,7 +96,7 @@ public class UnitListItem extends LinearLayout{
                         right.setText(String.valueOf(inputUnit));
 
                         toM = inputUnit/itemValue.getConvertValue();
-                        ((MainActivity) context).startConverting(toM);//TODO make an almost equal clear colour
+                        ((MainActivity) context).startConverting(toM);
                         break;
                     }catch(Exception e){
                         Log.d("TAG", "EXCEPTION: " + e);
